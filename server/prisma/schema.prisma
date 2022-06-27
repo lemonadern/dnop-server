@@ -12,3 +12,9 @@ model Task {
   label String
   done  Boolean @default(false)
 }
+
+model Memo {
+  id    Int     @id @default(autoincrement())
+  title String
+  body  String
+}
